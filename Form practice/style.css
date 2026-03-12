@@ -1,0 +1,66 @@
+body{
+    background-color: rgba(103, 132, 145, 0.795);
+}
+.container{
+    height: 60vh;
+     width: 90%;      /* instead of 31vw */
+  max-width: 400px;
+    padding-top: 50px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 30px;
+    text-align: center;
+    background-color: white;
+   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+
+    
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.head{
+  
+     font-family: "Quicksand", sans-serif;
+  
+}
+.para{
+    font-family: "Quicksand", sans-serif;
+    margin: 5px;
+    font-size: 14px;
+} 
+.one{
+padding: 15px;
+margin-top: 20px;
+ width: 80%;
+border-radius: 8px;
+}
+.two{
+padding: 15px;
+margin-top: 15px;
+ width: 80%;
+border-radius: 8px;
+}
+.three{
+    margin-top: 30px;
+    padding: 18px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 18px;
+     width: 60%;
+    border-radius: 15px;
+    background-color: rgb(39, 108, 126);
+    color: white;
+    font-weight: bold;
+}
+.last{
+    margin: 10px;
+     font-family: "Quicksand", sans-serif;
+     font-size: 14px;
+}
+.three:hover{
+    cursor: pointer;
+    transition: 0.3 ease;
+    background-color: rgb(30, 90, 105);
+}
