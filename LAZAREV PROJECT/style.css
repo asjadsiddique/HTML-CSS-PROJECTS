@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: neue-haas-grotesk-display, sans-serif;
+    color: #fff;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.page1 h1{
+    font-size: 7vw;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 7vw;
+
+}
+
+.page1 p{
+  font-size: 1vw;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 4vw;
+  line-height: 1.5vw;
+}
+
+.page-01{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.page-01 h4{
+    padding: 12px;
+    font-weight: 400;
+    border-radius: 50px;
+    font-size: 1vw;
+    margin-top: 0.5vw;
+    border: 1px solid rgb(206, 206, 206);
+}
+.page-01 h4:nth-last-child(2){
+    border : none;
+    padding: 2px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw 10vw;
+    position: fixed;
+     background-color: #111;
+    width: 100vw;
+    z-index: 10;
+   
+}
+nav h1{
+    font-size: 1.5vw;
+    text-transform: uppercase;
+}
+
+.nav-up{
+    display: flex;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    gap:  2vw;
+}
+.nav-up h4{
+    font-size: 0.8vw;
+    font-weight: 500;
+}
+
+.nav-bottom{
+    height: 0%;
+    width: 80%;
+    /* background-color: red; */
+    position: absolute;
+    bottom: 0%;
+     
+           transition: all ease 0.65s;
+    border-bottom: 1px solid #dadada;
+    display: flex;
+    background-color: #111;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-left: 15vw;
+    padding-right: 13vw;
+    gap: 2vw;
+    overflow: hidden;
+ 
+
+}
+
+
+.bottom-div h5{
+    margin-top: 0.5vw;
+    text-transform: uppercase;
+
+}
+
+.bottom-div h5 span{
+    font-size: 0.7vw;
+    font-weight: 500;
+  
+    
+}
+
+nav:hover .nav-bottom{
+   height: 150%;
+   /* background-color: red; */
+   bottom: -150%;
+   transform: translateY(-15px);
+
+}
+
+button{
+    height: 3vw;
+    width: 8vw;
+    background-color: #0DA34E;
+    font-size: 0.8vw;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-radius: 50px;
+}
+
+#moving-div{
+    /* background-color: red; */
+    position: absolute;
+    margin-top: 5vw;
+    bottom: 3%;
+    width: 40%;
+      white-space: nowrap;
+      overflow: hidden;
+      padding: 12px;
+    
+}
+#moving-div .move{
+    display: inline-block;
+    animation-name: apply;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+     
+}
+
+ 
+#moving-div .move img{
+    height: 3vh;
+    margin-left: 1vw;
+    
+}
+
+.blur-left{
+    height: 100%;
+    width: 20%;
+    position: absolute;
+    top: 0;
+    left: 0;
+      background: linear-gradient(to right, #111,transparent);
+    z-index: 2;
+}
+.blur-right{
+    height: 100%;
+    width: 20%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    background: linear-gradient(to right,transparent,#111);
+}
+
+@keyframes apply {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+.page2{
+    height: 100vh;
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #616161;
+    /* background-color: red; */
+    
+  
+}
+.page-left{
+     height: 100vh;
+     width: 33%;
+    margin-left: 10vw;
+    /* background-color: aquamarine; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.page-right{
+     height: 100vh;
+     width: 40%;
+     margin-right: 8.9vw;
+    /* background-color: aquamarine; */
+}
+
+.page-left p{
+    font-size: 1vw;
+    padding-top: 5vw;
+}
+.page-left h5{
+    font-size: 1.1vw;
+    font-weight: 400;
+    padding-bottom: 8vw;
+}
+
+.right-elem{
+    font-size: 0.9vw;
+    font-weight: 500;
+    padding-top: 2vw;
+    /* padding-bottom: 1.5vw; */
+    border-bottom: 1px solid #333;
+    /* position: relative; */
+  
+}
+.right-elem img{
+    height: 10vh;
+    width: 7vw;
+    object-fit: cover;
+    border-radius: 50%;
+    /* position: absolute; */
+    opacity: 0;
+      scale: 0;
+}
