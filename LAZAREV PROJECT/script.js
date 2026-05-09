@@ -28,4 +28,4 @@ element.forEach(function(elem){
 })
 
 }
-// page2animation()
+page2animation()
